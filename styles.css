@@ -1,0 +1,211 @@
+/* style.css */
+
+/* General Styles */
+QWidget {
+    background-color: transparent;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #F1FAEE;
+}
+
+QListWidget {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #222222, stop: 1 #444444);
+    border: 1px solid #222222;
+    border-radius: 5px;
+    padding: 0px;
+    color: #F1FAEE;
+    font-size: 14px;
+}
+
+QComboBox {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #380036, stop:1 #0CBABA);
+    border: 1px solid #222222;
+    border-radius: 5px;
+    padding: 0px;
+    color: #F1FAEE;
+    font-size: 14px;
+}
+
+QLineEdit {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #222222, stop: 1 #444444);
+    border: 1px solid #222222;
+    border-radius: 5px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    color: #F1FAEE;
+    font-size: 24px;
+}
+
+QPushButton#closeButton {
+    background-color: #fb4c24;
+    color: #F1FAEE;
+    border: 1px solid #222222;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0px 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 6px;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 16px;
+}
+
+QPushButton#closeButton:hover {
+    background-color: #4d4d4d;
+}
+
+QPushButton#closeButton:pressed {
+    background-color: #030301;
+}
+
+
+QLineEdit:focus,
+QListWidget:focus,
+QComboBox:focus {
+    background-color: #003b45;
+    color: #F1FAEE;
+}
+
+QPushButton {
+    background-color: #080932;
+    color: #F1FAEE;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 12px;
+    font-size: 18px;
+}
+
+QPushButton:hover {
+    background-color: #fb4c24;
+    color: #F1FAEE;
+}
+
+QPushButton:pressed {
+    background-color: #d4d4d4;
+    color: #000000;
+}
+
+
+QSlider::groove:horizontal {
+    border: 0px solid #535353;
+    height: 6px;
+    background: #4d4d4d;
+    margin: 0px 0;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: #464646;
+    width: 18px;
+    height: 18px;
+    margin: -6px 0;
+    border-radius: 9px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #fb4c24;
+}
+
+QSlider::sub-page:horizontal {
+    background: #fb4c24;
+    border: 1px solid #fb4c24;
+    height: 6px;
+    border-radius: 3px;
+}
+
+QSlider::add-page:horizontal {
+    background: #4d4d4d;
+    border: 1px solid #4d4d4d;
+    height: 6px;
+    border-radius: 3px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #ffffff;
+    height: 4px;
+    margin: 0px 20px 0 20px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #50425b;
+    min-width: 20px;
+    border-radius: 3px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #fb4c24;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background: none;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: #ffffff;
+    width: 4px;
+    margin: 20px 0 20px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #50425b;
+    min-height: 20px;
+    border-radius: 3px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #fb4c24;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+QLabel {
+    color: #F1FAEE;
+}
+
+QMainWindow {
+    background-color: #030301;
+}
+
+QVideoWidget {
+    border: 2px solid #fb4c24;
+    border-radius: 10px;
+}
+
+QListWidget {
+    background-color: #030301;
+    border: none;
+    color: #F1FAEE;
+    font-size: 14px;
+}
+
+QListWidget {
+    background-color: #030301;
+    border: none;
+    color: #F1FAEE;
+    font-size: 14px;
+}
+
+QListWidget::item {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+            stop: 0 #004256, stop: 1 #20233e);
+    margin: 5px;
+    /* Space between items */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+QListWidget::item:hover {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+            stop: 0 #aa0033, stop: 1 #910c00);
+}
+
+QListWidget::item:selected {
+    background-color: #4d4d4d;
+    color: #F1FAEE;
+}
